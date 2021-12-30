@@ -742,7 +742,8 @@ class MakeonlyoneCase(MethodView):
             #         new_testre.by = False
             #         db.session.commit()
             #         return jsonify({'code': 61, 'msg': '转化请求参数失败，原因：%s' % e})
-            #     dubboapi = DubboInterface(url=case.Interface_url, interface=case.Interface_pase,
+            #
+            add testdubboapi = DubboInterface(url=case.Interface_url, interface=case.Interface_pase,
             #                               method=case.Interface_meth,
             #                               param=case.Interface_headers, **(data))
             #     dubboapireslu = dubboapi.getresult()
